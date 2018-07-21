@@ -1,0 +1,88 @@
+<!--
+	作者：zxnaruto1010@163.com
+	时间：2018-07-21
+	描述：表单测试
+	表单元素：<form>
+    <input>元素：
+        文本框:type="text"
+        密码框:type="password"
+        单选框:type="radio"
+        复选框:type="checkbox"
+        按钮:type="button"
+        文件选择框:type="file"
+        隐藏框:type="hidden"
+          其他元素：
+          标签<lable>
+          文本域<textarea>
+          下拉选:<select>
+          <option>
+          </option>
+          </select>
+
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单</title>
+	</head>
+	<body>
+		<form>
+			<!--聚焦，点击账户也可以聚焦到文本框-，lable绑定关联文本框 使得点击标签中的文字可以实现相应的操作
+				比如单选框选性别，可以点文字男女进行选择，更人性化
+			-->
+			<label for="user_name">	账户：</label>
+			<input type="text"  id="user_name"/><br />
+			<label for="user_pwd">	密码：</label>
+			<input type="password" id="user_pwd" />
+			<br />
+			<!--单选框：name区分是否可以单选，name一样可单选
+				加上lable使得点文字也可以选择，for里面为id
+			-->
+			性别：
+			<label for="male">男</label>
+			<input type="radio" id="male"  name="sex"/>
+			<label for="female">女</label>
+			<input type="radio" id="female" name="sex"/>
+		</form>
+		<!--复选框:name可以不一样-->
+		<form>
+			爱好：
+			<label for="baskteball">篮球</label>
+			<input type="checkbox" id="basktetball" name="c"/>
+			<label for="football">足球</label>
+			<input type="checkbox" id="football"  name="c"/>
+			<label for="pingpang">乒乓球</label>
+			<input type="checkbox" id="pingpang" name="c"/>
+		</form>
+		<!--隐藏域、文件选择框-->
+		<form>
+			啦啦啦啦
+			<lable for="input">上传:</lable>
+			<input type="file" id="input"/>
+		</form>
+		<!--文本域-->
+		<form>
+			
+		    地址：
+			<textarea id="adrs" cols="30" rows="30" >1111111111111111111111111111111</textarea>
+		</form>
+		<!--下拉框-->
+		<form>
+			
+			<label for="s">课程：</label>
+			<select id="s">
+				<option value="1">java</option>
+				<option value="2">c++</option>
+				<option value="3">php</option>
+			</select>
+		</form>
+		
+		<!--按钮-->
+		<form>
+			<input type="submit"  value="提交"/>
+			<input type="reset" value="重置" />
+			<input type="button" value="取消" />
+		</form>
+	</body>
+</html>

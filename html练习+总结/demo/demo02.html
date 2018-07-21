@@ -1,0 +1,91 @@
+<!--
+	作者：zxnaruto1010@163.com
+	时间：2018-07-20
+	描述：在html中怎加标题、段落、有序列表、无需列表
+	
+	标题元素：<h1>--<h6>
+	段落元素：<p>
+	有序列表：<ol> （ordered lists）
+	无需列表：<ul>  （unordered lists）
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>文本元素</title>
+	</head>
+
+	<body>
+		<!--六级标题-->
+		<!-- 注释快捷键：ctrl+shift+/ -->
+		<h1>一级标题</h1>
+		<h2>二级标题</h2>
+		<h3>三级标题</h3>
+		<h4>四级标题</h4>
+		<h5>五级标题</h5>
+		<h6>六级标题</h6>
+
+		<!--段落-->
+		hello xiaohuzi.hello xiaohuzi
+		<p>hello xiaohuzi</p>
+		<p>hello xiaohuzi</p>
+
+		<div align="center">
+			<h3>静夜思</h3>
+			<p>床前明月光 ，疑是地上霜</p>
+			<p>举头望明月，低头思故乡</p>
+		</div>
+
+		<!--有序列表-->
+		<caption>有序列表</caption>
+		<ol type="A">
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ol>
+		<ol type="i">
+			<li>火影忍者</li>
+			<li>海贼王</li>
+			<li>死神</li>
+		</ol>
+		<!--无序列表-->
+		<caption>无需列表</caption>
+		<ul>
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+		<!--列表嵌套-->
+		<caption>列表嵌套</caption>
+		<ol>
+			<li>
+				动漫
+				<ul>
+					<li>火影忍者</li>
+					<li>海贼王</li>
+					<li>死神</li>
+				</ul>
+			</li>
+		</ol>
+
+		<ul>
+			<li>
+				JAVA框架：
+				<ol>
+					<li>Spring</li>
+					<li>Hibernate</li>
+					<li>Struts</li>
+				</ol>
+			</li>
+			<li>
+				微服务:
+				<ol>
+					<li>SpringCloud</li>
+					<li>SpringBoot</li>
+				</ol>
+			</li>
+		</ul>
+	</body>
+
+</html>

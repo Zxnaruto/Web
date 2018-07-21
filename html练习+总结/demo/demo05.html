@@ -1,0 +1,54 @@
+<!--
+	作者：zxnaruto1010@163.com
+	时间：2018-07-20
+	描述：
+	图像元素：<img> 
+        超链接元素：<a> 
+        视频元素：<video> 
+
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>图像和超链接</title>
+	</head>
+
+	<body>
+		<!--链接到锚点-->
+		<a href="#bottom">跳转底部</a>
+		<!--图片-->
+		<!--../上一级目录-->
+		<p> <img src="img/5.jpg" / width="500" height="500"></p>
+		<!--超链接-->
+		<p>
+			<a href="demo01.html">跳转到demo01</a>
+		</p>
+		<p>
+			<!-- _blank：新建页面-->
+			<!-- _self:不新建页面,也不包含原页面-->
+			<!-- _parent: 不新建页面，可以返回 上一页-->
+			<a href="http://www.baidu.com" target="_self">百度</a>
+		</p>
+		<div style="width: 500px; height: 500px; border: 2; background-color: blue;"></div>
+		<div style="width: 500px; height: 500px; border: 2; background-color: blue;"></div>
+		<div style="width: 500px; height: 500px; border: 2; background-color: blanchedalmond;"></div>
+		<!--定义锚点
+			先定义锚点name，在定义锚点链接的位置href=name
+			之后点击锚点链接就会跳到锚点定义的位置
+		-->
+		<p>
+			<a name="bottom">底部</a>
+		</p>
+		<!-- 文档顶部为默认锚点 -->
+		<p>
+			<a href="#">回到顶部</a>
+		</p>
+         <!--视频-->
+         <video controls>
+         	<source src="vedio/PPAP_3.avi"></source>
+         </video>
+	</body>
+
+</html>

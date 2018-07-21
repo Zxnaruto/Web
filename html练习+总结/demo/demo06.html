@@ -1,0 +1,143 @@
+<!--
+	作者：zxnaruto1010@163.com
+	时间：2018-07-20
+	描述：
+	tr:一对代表一行
+	td:一对代表一列
+	th:表头
+	rowspan: 跨行
+	clospan:跨列
+	行分组：<thead>、<tbody>、<tfoot>
+-->
+<!--
+	作者：zxnaruto1010@163.com
+	时间：2018-07-20
+	描述：盒子模型
+	padding:内边距,内容与边界的距离
+	margin:外边距，外界与边框的距离
+	content:内容
+	border:边框
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表格</title>
+	</head>
+
+	<body>
+		<!--代表头表格-->
+		<table border="2">
+			<tr>
+				<th>姓名</th>
+				<th>年龄</th>
+			</tr>
+			<tr>
+				<td>zx</td>
+				<td>22</td>
+			</tr>
+			<tr>
+				<td>lxs</td>
+				<td>33</td>
+			</tr>
+		</table>
+
+		<!--普通表格-->
+		<table border="1" width="20%">
+			<tr>
+				<td>第一行第一列</td>
+				<td>第一行第二列</td>
+			</tr>
+			<tr>
+				<td>第二行第一列</td>
+				<td>第二行第二列</td>
+			</tr>
+		</table>
+
+		<!--跨行、跨列-->
+		<caption>跨行</caption>
+		<table border="1px" width="20%">
+			<tr>
+				<!--跨两行-->
+				<td rowspan="2">zx</td>
+				<td>xiaohuzi</td>
+			</tr>
+			<tr>
+				<td>ccc</td>
+			</tr>
+		</table>
+		<!--百分比是表格占整个屏幕的多少-->
+		<caption>跨列</caption>
+		<table border="5px" width="10%">
+			<tr>
+				<!--跨两列-->
+				<td colspan="2">zx00</td>
+			</tr>
+			<tr>
+				<td>nnnnnnn</td>
+				<td>xxxx</td>
+			</tr>
+		</table>
+		<!--跨行跨列-->
+		<table border="2" width="500" height="500">
+			<tr>
+				<td colspan="2">a</td>
+				  <td rowspan="2" >b</td>
+			</tr>
+
+			<tr>
+				<td rowspan="2" >c</td>
+				<td>d</td>
+			</tr>
+			<tr>
+				<td colspan="2">e</td>
+			</tr>
+			
+		</table>
+		<br />
+
+		<!--行分组：th中的字会加粗，这三个标签对表格的控制更好，头、身体、底部-->
+		<table border="5">
+			<thead>
+				<tr>
+					<th>编号</th>
+					<th>名称</th>
+					<th>金额</th>
+				</tr>
+			</thead>
+			<tbody style="color: red;">
+				<tr>
+					<td>001</td>
+					<td>鼠标</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>键盘</td>
+					<td>200</td>
+				</tr>
+
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">合计</td>
+					<td>300</td>
+				</tr>
+			</tfoot>
+		</table>
+		<br />
+		<!--对比-->
+		<table border="5">
+			<thead>
+				<tr>
+					<td>编号</td>
+					<td>名称</td>
+					<td>金额</td>
+				</tr>
+			</thead>
+		</table>
+
+	</body>
+
+</html>
