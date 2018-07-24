@@ -1,0 +1,39 @@
+  body {
+  	font-family: "微软雅黑", '文泉驿正黑';
+  }
+  
+  .form {
+  	width: 400px;
+  	margin: 150px auto;
+  	border: 1px solid #ccc;
+  }
+  
+  .form h1 {
+  	text-align: center;
+  	margin: 0;
+  	padding: 5px;
+  	border: 1px solid #ccc;
+  }
+  
+  .form p {
+  	margin: 0;
+  	padding: 20px;
+  	border: 1px solid #ccc;
+  }
+  
+  .form div {
+  	text-align: center;
+  	margin: 0;
+  	padding: 10px;
+  	border: 1px solid #ccc;
+  }
+  
+  .form div input {
+  	width: 60px;
+  	height: 30px;
+  }
+  
+  .error_msg {
+  	color: #f00;
+  	border: 1px solid #f00;
+  }
