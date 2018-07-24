@@ -1,0 +1,36 @@
+<!--
+	作者：zxnaruto1010@163.com
+	时间：2018-07-23
+	描述：登录验证测试
+	
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录验证测试</title>
+		<script type="text/javascript" src="js/JS08.js"></script>
+		 <link rel="stylesheet" href="css/JS08.css" />
+	</head>
+	 <body>
+    <div class="form">
+      <form action="http://www.baidu.com" 
+        onsubmit="return (check_name()+check_pwd())==2" >
+        <h1>登录</h1>
+        <p>
+          <label for="name">账号：</label>
+          <input type="text" id="name" onblur="check_name();"/>
+          <span id="name_msg">3-20位字符</span>
+        </p>
+        <p>
+          <label for="pwd">密码：</label>
+          <input type="password" id="pwd" onblur="check_pwd();"/>
+          <span id="pwd_msg">6-20位字符</span>
+        </p>
+        <div>
+          <input type="submit" value="登录" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

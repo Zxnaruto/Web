@@ -1,0 +1,10 @@
+1.var在JS中可以声明任意类型
+2.document.getElementById()通过id获取对象
+3.然后以对象调用方法，进行实现。
+4.js数据类型:
+  Undefinded
+  null
+  boolean
+  number
+  string
+五种，任意一种类型都可以用var进行声明和定义。
