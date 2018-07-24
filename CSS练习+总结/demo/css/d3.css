@@ -1,0 +1,55 @@
+div{
+
+	border: 1px solid black;
+}
+/*logo*/
+#log{
+	width:960px;
+	height: 60px;
+	margin: 0 auto;/*外边距：0代表上下  auto自動左右居中*/
+}
+/*导航栏 */
+#navigation{
+	width: 100%;
+	height: 50px;
+}
+/*主体*/
+#main{
+	width: 100%;
+	height: 450px;
+	margin: 0 auto;/*类似于自动居中*/
+	padding: 10px 0 0 0;/*上 右 下 左 内边距*/
+}
+/*底部*/
+#foot{
+	width: 100%;
+	height: 150px;
+	margin: 0 auto;
+}
+/*main里面嵌套div*/
+/*内容*/
+#content{
+	width: 970px;
+	height: 300px;
+	border: 1px solid blue;
+	margin: 0 auto;
+}
+/*内容嵌套的div*/
+/*操作区*/
+#operation{
+	width: 950px;
+	height: 60px;
+	margin: 0 auto;
+}
+/*数据区*/
+#data{
+	width: 950px;
+	height: 200px;
+	margin: 0 auto;
+}
+/*分页区*/
+#pages{
+	width: 950px;
+	height: 20px;
+	margin: 0 auto;
+}

@@ -1,0 +1,53 @@
+<!--
+	作者：zxnaruto1010@163.com
+	时间：2018-07-21
+	描述： CSS规则特性
+	 1.继承性
+	 2.层叠性
+	 3.优先级
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> CSS规则特性</title>
+		<style type="text/css">
+			/*层叠性：都发生作用，为了以后在固定样式中怎加新属性*/
+			h1{
+				background-color: blue;
+			}
+			h1{
+				color: red;
+			}
+			/*优先级:优点类似于覆盖，会显示后面的蓝色，也可以改固定的样式表*/
+			h2{
+				color: red;
+			}
+			h2{
+				color: blue;
+			}
+			/*继承性：内嵌标签继承外部定义的标签样式，内部body继承写的这个*/
+			/*body{
+				background-color: sandybrown;
+			}*/
+			/*id选择器*/
+			#d{
+				color: red;
+			}
+			/*class选择器*/
+			.p1{
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<!--层叠性-->
+	  <h1>层叠性</h1>
+	  <!--优先级-->
+	  <h2>优先级</h2>
+	  <!--选择器-->
+	  <p id="p">内容</p>
+	  <p class="p1">内容2</p>
+	  
+	</body>
+</html>

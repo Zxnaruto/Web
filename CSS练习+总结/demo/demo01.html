@@ -1,0 +1,33 @@
+<!--
+	作者：zxnaruto1010@163.com
+	时间：2018-07-21
+	描述：CSS使用示例
+	css三种使用方式： 1.行内样式
+	                2.外部样式
+	                3.内部样式
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS使用示例</title>
+		<!--style可以放在body里面，推荐放在head里-->
+		<style type="text/css">
+			/*样式选择器*/
+			h2{
+			  color: blue;
+			}
+			
+		</style>
+		<!--外部样式-->
+		<link rel="stylesheet" href="css/d1.css"/>
+	</head>
+	<body>
+		<!--内联样式 属性style-->
+		<h1 style="color: red;">内联样式</h1>
+		<!--内部样式 在head中定义style标签-->
+		<h2>内部样式</h2>
+		<!--外部样式：外部创建css文件，用link导入-->
+	   <h3>外部样式</h3>
+	</body>
+</html>
